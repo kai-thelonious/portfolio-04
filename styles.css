@@ -1,7 +1,11 @@
 * {
     background-color: #FF6B35;
     font-family: 'Montserrat', Times New Roman, serif;
+}
 
+html, body {
+    min-height: 300vh; /* 200% of the viewport height */
+    margin: 0;
 }
 .background-image {
     position: absolute;
@@ -19,6 +23,7 @@
     left: 0;
     height: 500px;
     width: auto;
+    z-index: 0;
 
 
 }
@@ -53,12 +58,22 @@ h1 {
     width: 400px;
 }
 
-.chart-div {
-
+.chart-section {
+    position: relative;
+    height: 100vh;
 }
 
+
+
 #myChart {
-    height: 200px;
+    position: absolute;
+    max-width: 700px;
+    max-height: 700px;
+    z-index: 1;
+    padding-right: 50px;
+    padding-top: 100px;
+    left: 800px;
+    top: 100px;
 }
 
 
