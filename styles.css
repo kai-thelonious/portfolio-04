@@ -1,0 +1,64 @@
+* {
+    background-color: #FF6B35;
+    font-family: 'Montserrat', Times New Roman, serif;
+
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 1080px;
+    width: 900px;
+    overflow: clip;
+}
+
+
+.background-image-2 {
+    position: absolute;
+    left: 0;
+    height: 500px;
+    width: auto;
+
+
+}
+
+.hero {
+    position: relative;
+    background: transparent;
+
+}
+
+.hero * {
+    background: transparent;
+}
+
+h1 {
+    font-size: 96px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 100px;
+
+}
+
+.front-page-paragraphs {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+.paragraphs {
+    height: 400px;
+    width: 400px;
+}
+
+.chart-div {
+
+}
+
+#myChart {
+    height: 200px;
+}
+
+
