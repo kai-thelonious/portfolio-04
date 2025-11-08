@@ -3,10 +3,6 @@
     font-family: 'Montserrat', Times New Roman, serif;
 }
 
-html, body {
-    min-height: 300vh; /* 200% of the viewport height */
-    margin: 0;
-}
 .background-image {
     position: absolute;
     top: 0;
