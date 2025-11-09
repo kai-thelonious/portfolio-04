@@ -68,8 +68,9 @@ h1 {
     z-index: 1;
     padding-right: 50px;
     padding-top: 100px;
-    left: 800px;
+    left: 700px;
     top: 100px;
+    background: transparent;
 }
 
 
