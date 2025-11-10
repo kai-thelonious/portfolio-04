@@ -1,3 +1,10 @@
+*{
+    /* Tilføj ´*{´ */
+    outline-style: dotted;
+    outline-color: red;
+    outline-offset: -1px;
+} /*kanter på elementer til visualisere design*/
+
 * {
     /*background-color: #FF6B35;*/
     background-color: #DEC3BE;
@@ -34,14 +41,14 @@
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     margin: 100px;
 
 }
 h2 {
-    font-size: 76px;
+    font-size: 3rem;
     text-align: center;
     /*text-transform: uppercase;*/
     margin: 100px;
@@ -55,28 +62,83 @@ h2 {
     padding-top: 100px;
 }
 
-.paragraphs {
+.paragraph {
     height: 400px;
     width: 400px;
 }
 
-.chart-section {
+.chart1 {
     position: relative;
     height: 100vh;
 }
 
 
 
-#myChart {
-    position: absolute;
-    max-width: 700px;
-    max-height: 700px;
-    z-index: 1;
-    padding-right: 50px;
-    padding-top: 100px;
-    left: 700px;
-    top: 100px;
-    background: transparent;
+
+
+/*<editor-fold desc="text and charts">*/
+
+
+#chart1-and-text {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
 }
+
+/* Tekstkolonne */
+.text-chart1 h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+.text-chart1 p { line-height: 1.6; margin: 0 0 12px; }
+
+
+#chart2-and-text {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* Tekstkolonne */
+.text-chart2 h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+.text-chart2 p { line-height: 1.6; margin: 0 0 12px; }
+
+
+#chart3-and-text {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* Tekstkolonne */
+.text-chart3 h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+.text-chart3 p { line-height: 1.6; margin: 0 0 12px; }
+
+
+
+
+/*</editor-fold>*/
+
 
 
