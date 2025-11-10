@@ -1,14 +1,13 @@
 const ctx1 = document.querySelector('#myChart1').getContext('2d');
 Chart.defaults.color = '#000000';
 
-
 new Chart(ctx1, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: ['2009-01', '2009-02'],
+        labels: ['2009-01', '2009-02', '2009-03'],
         datasets: [{
             label: '# of Votes',
-            data: [35.32, 43.23],
+            data: [35.32, 43.23, 32.35],
             backgroundColor: '#136288',
             borderWidth: 1,
             color: '#000000'
