@@ -12,6 +12,7 @@ const pool = mysql.createPool({
 
 
 const ctx = document.getElementById('myChart').getContext('2d');
+Chart.defaults.color = '#000000';
 
 new Chart(ctx, {
     type: 'bar',
@@ -20,15 +21,25 @@ new Chart(ctx, {
         datasets: [{
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
+            backgroundColor: '#136288',
+            borderWidth: 1,
+            color: '#000000'
         }]
     },
     options: {
         responsive: true,
-
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+                grid: {
+                    display: false
+                }
+
+            },
+            x: {
+                grid: {
+                    display: false
+                }
             }
         }
     }
