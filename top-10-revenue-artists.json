@@ -1,0 +1,42 @@
+[
+	{
+		"artist" : "Iron Maiden",
+		"revenue": 138.60
+	},
+	{
+		"artist" : "U2",
+		"revenue" : 105.93
+	},
+	{
+		"artist" : "Metallica",
+		"revenue": 90.09
+	},
+	{
+		"artist" : "Led Zeppelin",
+		"revenue": 86.13
+	},
+	{
+		"artist" : "Lost",
+		"revenue": 81.59
+	},
+	{
+		"artist" : "The Office",
+		"revenue": 49.75
+	},
+	{
+		"artist" : "Os Paralamas Do Sucesso",
+		"revenue": 44.55
+	},
+	{
+		"artist" : "Deep Purple",
+		"revenue": 43.56
+	},
+	{
+		"artist" : "Faith No More",
+		"revenue": 41.58
+	},
+	{
+		"artist" : "Eric Clapton",
+		"revenue": 39.60
+	}
+]

@@ -1,0 +1,98 @@
+[
+	{
+		"genre" : "Rock",
+		"revenue" : 826.65
+	},
+	{
+		"genre" : "Latin",
+		"revenue" : 382.14
+	},
+	{
+		"genre" : "Metal",
+		"revenue" : 261.36
+	},
+	{
+		"genre" : "Alternative & Punk",
+		"revenue" : 241.56
+	},
+	{
+		"genre" : "TV Shows",
+		"revenue" : 93.53
+	},
+	{
+		"genre" : "Jazz",
+		"revenue" : 79.20
+	},
+	{
+		"genre" : "Blues",
+		"revenue" : 60.39
+	},
+	{
+		"genre" : "Drama",
+		"revenue" : 57.71
+	},
+	{
+		"genre" : "Classical",
+		"revenue" : 40.59
+	},
+	{
+		"genre" : "R&B/Soul",
+		"revenue" : 40.59
+	},
+	{
+		"genre" : "Sci Fi & Fantasy",
+		"revenue" : 39.80
+	},
+	{
+		"genre" : "Reggae",
+		"revenue" : 29.70
+	},
+	{
+		"genre" : "Pop",
+		"revenue" : 27.72
+	},
+	{
+		"genre" : "Soundtrack",
+		"revenue" : 19.80
+	},
+	{
+		"genre" : "Comedy",
+		"revenue" : 17.91
+	},
+	{
+		"genre" : "Hip Hop/Rap",
+		"revenue" : 16.83
+	},
+	{
+		"genre" : "Bossa Nova",
+		"revenue" : 14.85
+	},
+	{
+		"genre" : "Alternative",
+		"revenue" : 13.86
+	},
+	{
+		"genre" : "World",
+		"revenue" : 12.87
+	},
+	{
+		"genre" : Science Fiction,
+		"revenue" : 11.94
+	},
+	{
+		"genre" : Electronica/Dance,
+		"revenue" : 11.88
+	},
+	{
+		"genre" : Heavy Metal,
+		"revenue" : 11.88
+	},
+	{
+		"genre" : Easy Listening,
+		"revenue" : 9.90
+	},
+	{
+		"genre" : Rock And Roll,
+		"revenue" : 5.94
+	}
+]

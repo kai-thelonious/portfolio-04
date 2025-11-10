@@ -1,0 +1,102 @@
+[
+	{
+		"genre" : "Sci Fi & Fantasy",
+		"track_length_m" : 48.53
+	},
+	{
+		"genre" : "Science Fiction",
+		"track_length_m" : 43.76
+	},
+	{
+		"genre" : "Drama",
+		"track_length_m" : 42.92
+	},
+	{
+		"genre" : "TV Shows",
+		"track_length_m" : 35.75
+	},
+	{
+		"genre" : "Comedy",
+		"track_length_m" : 26.42
+	},
+	{
+		"genre" : "Metal",
+		"track_length_m" : 5.16
+	},
+	{
+		"genre" : "Electronica/Dance",
+		"track_length_m" : 5.05
+	},
+	{
+		"genre" : "Heavy Metal",
+		"track_length_m" : 4.96
+	},
+	{
+		"genre" : "Classical",
+		"track_length_m" : 4.90
+	},
+	{
+		"genre" : "Jazz",
+		"track_length_m" : 4.86
+	},
+	{
+		"genre" : "Rock",
+		"track_length_m" : 4.73
+	},
+	{
+		"genre" : "Blues",
+		"track_length_m" : 4.51
+	},
+	{
+		"genre" : "Alternative",
+		"track_length_m" : 4.40
+	},
+	{
+		"genre" : "Reggae",
+		"track_length_m" : 4.12
+	},
+	{
+		"genre" : "Soundtrack",
+		"track_length_m" : 4.07
+	},
+	{
+		"genre" : "Alternative & Punk",
+		"track_length_m" : 3.91
+	},
+	{
+		"genre" : "Latin",
+		"track_length_m" : 3.88
+	},
+	{
+		"genre" : "Pop",
+		"track_length_m" : 3.82
+	},
+	{
+		"genre" : "World",
+		"track_length_m" : 3.75
+	},
+	{
+		"genre" : "R&B/Soul",
+		"track_length_m" : 3.67
+	},
+	{
+		"genre" : "Bossa Nova",
+		"track_length_m" : 3.66
+	},
+	{
+		"genre" : "Easy Listening",
+		"track_length_m" : 3.15
+	},
+	{
+		"genre" : "Hip Hop/Rap",
+		"track_length_m" : 2.97
+	},
+	{
+		"genre" : "Opera",
+		"track_length_m" : 2.91
+	},
+	{
+		"genre" : "Rock And Roll",
+		"track_length_m" : 2.24
+	}
+]
