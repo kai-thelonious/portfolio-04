@@ -1,5 +1,6 @@
 * {
-    background-color: #FF6B35;
+    /*background-color: #FF6B35;*/
+    background-color: #DEC3BE;
     font-family: 'Montserrat', Times New Roman, serif;
 }
 
@@ -20,8 +21,6 @@
     height: 500px;
     width: auto;
     z-index: 0;
-
-
 }
 
 .hero {
@@ -38,6 +37,13 @@ h1 {
     font-size: 96px;
     text-align: center;
     text-transform: uppercase;
+    margin: 100px;
+
+}
+h2 {
+    font-size: 76px;
+    text-align: center;
+    /*text-transform: uppercase;*/
     margin: 100px;
 
 }
