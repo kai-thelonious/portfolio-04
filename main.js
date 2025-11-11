@@ -35,18 +35,19 @@ const chart1 = new Chart(ctx1, {
     },
     options: {
         responsive: true,
-        scales: {
-            y: {
-                beginAtZero: true,
-                grid: {
-                    display: false
-                }
 
-            },
-            x: {
-                grid: {
-                    display: false
-                }
+    },
+    scales: {
+        y: {
+            beginAtZero: true,
+            grid: {
+                display: false
+            }
+
+        },
+        x: {
+            grid: {
+                display: false
             }
         }
     }
@@ -105,6 +106,26 @@ new Chart(ctx3, {
         }]
     },
     options: {
+        animations: {
+            tension: {
+                duration: 1000,
+                easing: "easeInQuad",
+            }
+        },
+        hoverBackgroundColor:
+            ["#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E"],
+        hoverBorderColor: "#CC9933",
+        hoverBorderWidth: 2,
+
         responsive: true,
         scales: {
             y: {
