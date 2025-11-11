@@ -5,7 +5,7 @@
     outline-offset: -1px;
 } /*kanter på elementer til visualisere design*/
 
-* {
+html {
     /*background-color: #FF6B35;*/
     background-color: #DEC3BE;
     font-family: 'Montserrat', Times New Roman, serif;
@@ -136,9 +136,13 @@ h2 {
 .text-chart3 p { line-height: 1.6; margin: 0 0 12px; }
 
 
-.donut-chart-div {
 
+/*   ------------ Donut Chart ------------- */
+
+#donut-header {
+    font-size: 20rem;
 }
+
 
 /*</editor-fold>*/
 
