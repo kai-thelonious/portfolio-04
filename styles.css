@@ -140,9 +140,13 @@ h2 {
 /*   ------------ Donut Chart ------------- */
 
 #donut-header {
-    font-size: 20rem;
+    font-size: 8rem;
+    margin-top: 0;
 }
 
+#myDonutChart {
+    max-height: 800px;
+}
 
 /*</editor-fold>*/
 
