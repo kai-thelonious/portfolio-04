@@ -61,7 +61,7 @@ Chart.defaults.color = '#FFFFFF';
 Chart.defaults.font.weight = 'bold';
 
 const chart1 = new Chart(ctx1, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
         labels: labels,
         datasets: [{

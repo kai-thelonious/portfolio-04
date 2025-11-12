@@ -67,10 +67,7 @@ h2 {
     width: 400px;
 }
 
-.chart1 {
-    position: relative;
-    height: 100vh;
-}
+
 
 
 
@@ -135,6 +132,27 @@ h2 {
 }
 .text-chart3 p { line-height: 1.6; margin: 0 0 12px; }
 
+
+#chart4-and-text {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+/* Tekstkolonne */
+.text-chart4 h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+.text-chart4 p { line-height: 1.6; margin: 0 0 12px; }
+
+#myChart4 {
+
+}
 
 
 /*   ------------ Donut Chart ------------- */

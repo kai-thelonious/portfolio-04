@@ -76,23 +76,23 @@
 		"revenue" : 12.87
 	},
 	{
-		"genre" : Science Fiction,
+		"genre" : "Science Fiction",
 		"revenue" : 11.94
 	},
 	{
-		"genre" : Electronica/Dance,
+		"genre" : "Electronica/Dance",
 		"revenue" : 11.88
 	},
 	{
-		"genre" : Heavy Metal,
+		"genre" : "Heavy Metal",
 		"revenue" : 11.88
 	},
 	{
-		"genre" : Easy Listening,
+		"genre" : "Easy Listening",
 		"revenue" : 9.90
 	},
 	{
-		"genre" : Rock And Roll,
+		"genre" : "Rock And Roll",
 		"revenue" : 5.94
 	}
 ]

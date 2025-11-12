@@ -1,22 +1,3 @@
-let labels = []
-let data = []
-
-await fetch("./songs-per-genre.json")
-    .then(response => response.json())
-    .then(songsPerGenre => {
-        console.log(songsPerGenre)
-        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
-
-
-        songsPerGenre.forEach(song => {
-            labels.push(song.genre)
-
-            data.push(song.genre_tracks)
-        });
-    });
-
-console.log(labels)
-console.log(data)
 
 const bounceShadowPlugin = {
     id: 'bounceShadowPlugin',
@@ -63,8 +44,7 @@ const colorSweepPlugin = {
         }
     }
 };
-const ctx1 = document.querySelector('#myChart1').getContext('2d');
-Chart.defaults.color = '#000000';
+
 
 const customTexts1 = [
     "High-energy guitars and drums.",
@@ -94,13 +74,39 @@ const customTexts1 = [
     "Dramatic vocal performances."
 ];
 
+let labelsChart1 = []
+let dataChart1 = []
+
+await fetch("./genre-track-length.json")
+    .then(response => response.json())
+    .then(trackLengthPerGenre => {
+        console.log(trackLengthPerGenre)
+        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
+
+
+        trackLengthPerGenre.forEach(genre => {
+            labelsChart1.push(genre.genre)
+
+            dataChart1.push(genre.track_length_m)
+        });
+    });
+
+console.log(labelsChart1)
+console.log(dataChart1)
+console.log("")
+console.log("")
+
+
+const ctx1 = document.querySelector('#myChart1').getContext('2d');
+Chart.defaults.color = '#000000';
+
 const chart1 = new Chart(ctx1, {
     type: 'bar',
     data: {
-        labels: labels,
+        labels: labelsChart1,
         datasets: [{
-            label: 'Songs Per Genre',
-            data: data,
+            label: 'Track Length Minutes',
+            data: dataChart1,
             backgroundColor: [
                 "#280000",
                 "#961E1E",
@@ -135,7 +141,7 @@ const chart1 = new Chart(ctx1, {
                     label: function (context) {
                         const index = context.dataIndex;
                         const value = Math.round(context.parsed.y);
-                        return customTexts1[index] + " — Total songs: " + value + " songs";
+                        return "Average Track Length: " + value + "m ";
                     }
                 }
             }
@@ -154,42 +160,114 @@ const chart1 = new Chart(ctx1, {
 });
 
 
+let labelsChart2 = []
+let dataChart2 = []
 
+await fetch("./genre-revenue.json")
+    .then(response => response.json())
+    .then(revenuePerGenre => {
+        console.log(revenuePerGenre)
+        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
+
+
+        revenuePerGenre.forEach(genre => {
+            labelsChart2.push(genre.genre)
+
+            dataChart2.push(genre.revenue)
+        });
+    });
+
+console.log(labelsChart2)
+console.log(dataChart2)
+console.log("")
+console.log("")
 
 const ctx2 = document.querySelector('#myChart2').getContext('2d');
 Chart.defaults.color = '#000000';
 
-new Chart(ctx2, {
+const chart2 = new Chart(ctx2, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: labelsChart2,
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: '#136288',
-            borderWidth: 1,
+            label: "Revenue In Dollars",
+            data: dataChart2,
+            backgroundColor: [
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E"],
+            borderColor: "#CC9933",
+            borderWidth: 3,
             color: '#000000'
         }]
     },
     options: {
-        responsive: true,
-    },
-        scales: {
-            y: {
-                beginAtZero: true,
-                grid: {
-                    display: false
-                }
-
-            },
-            x: {
-                grid: {
-                    display: false
+        plugins: {
+            tooltip: {
+                titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
+                bodyFont: { family: 'Montserrat, sans-serif', size: 12},
+                backgroundColor: 'rgba(0,0,0,0.8)',
+                titleColor: '#FFD700',
+                bodyColor: '#FFFFFF',
+                borderColor: '#CC9933',
+                displayColors: false,
+                enabled: true,
+                callbacks: {
+                    title: function (context) {
+                        return "Genre: " + context[0].label;
+                    },
+                    label: function (context) {
+                        const index = context.dataIndex;
+                        const value = Math.round(context.parsed.y);
+                        return customTexts1[index] + " — Revenue in dollars: " + value + " $";
+                    }
                 }
             }
+        },
+        interaction: {
+            mode: 'nearest',
+            intersect: true
+        },
+        responsive: true,
+        scales: {
+            y: { beginAtZero: true, grid: { display: false } },
+            x: { grid: { display: false } }
         }
-    }
-);
+    },
+    plugins: [bounceShadowPlugin, colorSweepPlugin]
+});
+
+
+let labelsChart3 = []
+let dataChart3 = []
+
+await fetch("./top-10-revenue-artists.json")
+    .then(response => response.json())
+    .then(revenuePerArtist => {
+        console.log(revenuePerArtist)
+        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
+
+
+        revenuePerArtist.forEach(artist => {
+            labelsChart3.push(artist.artist)
+
+            dataChart3.push(artist.revenue)
+        });
+    });
+
+console.log(labelsChart3)
+console.log(dataChart3)
+console.log("")
+console.log("")
+
+
 
 const ctx3 = document.querySelector('#myChart3').getContext('2d');
 Chart.defaults.color = '#000000';
@@ -210,10 +288,10 @@ const customTexts3 = [
 new Chart(ctx3, {
     type: 'bar',
     data: {
-        labels: ['Iron Maiden', 'U2', 'Metallica', 'Led Zeppelin', 'Lost', 'The Office', 'Os Paralamas Do Sucesso', 'Deep Purple', 'Faith No More', 'Eric Clapton'],
+        labels: labelsChart3,
         datasets: [{
-            label: 'Revenue in dollars',
-            data: [138.60, 105.93, 90.09, 86.13, 81.59, 49.75, 44.55, 43.56, 41.58, 39.60],
+            label: 'Revenue In Dollars',
+            data: dataChart3,
             backgroundColor: [
                 "#280000",
                 "#961E1E",
@@ -260,6 +338,90 @@ new Chart(ctx3, {
         responsive: true,
         scales: {
             y: { beginAtZero: true, grid: { display: false } },
+            x: { grid: { display: false } }
+        }
+    },
+    plugins: [bounceShadowPlugin, colorSweepPlugin]
+});
+
+
+let labelsChart4 = []
+let dataChart4 = []
+
+await fetch("./monthly-revenue.json")
+    .then(response => response.json())
+    .then(revenuePerMonth => {
+        console.log(revenuePerMonth)
+        // HERE IS WHERE YOU WRITE YOUR CODE!!!!!!!!
+
+
+        revenuePerMonth.forEach(month => {
+            labelsChart4.push(month.month)
+
+            dataChart4.push(month.revenue)
+        });
+    });
+
+console.log(labelsChart4)
+console.log(dataChart4)
+console.log("")
+console.log("")
+
+const ctx4 = document.querySelector('#myChart4').getContext('2d');
+Chart.defaults.color = '#000000';
+
+const chart4 = new Chart(ctx4, {
+    type: 'line',
+    data: {
+        labels: labelsChart4,
+        datasets: [{
+            label: "Revenue In Dollars",
+            data: dataChart4,
+            backgroundColor: [
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E",
+                "#280000",
+                "#961E1E"],
+            borderColor: "#CC9933",
+            borderWidth: 3,
+            color: '#000000'
+        }]
+    },
+    options: {
+        plugins: {
+            tooltip: {
+                titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
+                bodyFont: { family: 'Montserrat, sans-serif', size: 12},
+                backgroundColor: 'rgba(0,0,0,0.8)',
+                titleColor: '#FFD700',
+                bodyColor: '#FFFFFF',
+                borderColor: '#CC9933',
+                displayColors: false,
+                enabled: true,
+                callbacks: {
+                    title: function (context) {
+                        return "Year and Month: " + context[0].label;
+                    },
+                    label: function (context) {
+                        const value = Math.round(context.parsed.y);
+                        return `Revenue: ${value}M$`;
+                    }
+                }
+            }
+        },
+        interaction: {
+            mode: 'nearest',
+            intersect: true
+        },
+        responsive: true,
+        scales: {
+            y: { beginAt20: true, grid: { display: false } },
             x: { grid: { display: false } }
         }
     },
