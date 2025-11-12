@@ -31,15 +31,39 @@ const colorSweepPlugin = {
             const { datasetIndex, index } = active[0];
             const bar = chart.getDatasetMeta(datasetIndex).data[index];
 
-            const time = Date.now() / 500;
-            const gradient = ctx.createLinearGradient(bar.x - bar.width / 2, bar.y, bar.x + bar.width / 2, chart.chartArea.bottom);
-            gradient.addColorStop(0, `rgba(40, 0, 0, 1)`);
-            gradient.addColorStop(0.5 + 0.5 * Math.sin(time), `rgba(204, 153, 51, 1)`); // moving highlight
-            gradient.addColorStop(1, `rgba(150, 30, 30, 1)`);
+            // Get custom options from the chart config
+            const opts = chart.options.plugins.colorSweepPlugin || {};
+
+            const colors = opts.gradientColors || [
+                'rgba(40, 0, 0, 1)',
+                'rgba(204, 153, 51, 1)',
+                'rgba(150, 30, 30, 1)'
+            ];
+            const speed = opts.speed || 500; // how fast the highlight moves
+
+            const time = Date.now() / speed;
+            const gradient = ctx.createLinearGradient(
+                bar.x - bar.width / 2,
+                bar.y,
+                bar.x + bar.width / 2,
+                chart.chartArea.bottom
+            );
+
+            gradient.addColorStop(0, colors[0]);
+            gradient.addColorStop(
+                0.5 + 0.5 * Math.sin(time),
+                colors[1]
+            );
+            gradient.addColorStop(1, colors[2]);
 
             ctx.save();
             ctx.fillStyle = gradient;
-            ctx.fillRect(bar.x - bar.width / 2, bar.y, bar.width, chart.chartArea.bottom - bar.y);
+            ctx.fillRect(
+                bar.x - bar.width / 2,
+                bar.y,
+                bar.width,
+                chart.chartArea.bottom - bar.y
+            );
             ctx.restore();
         }
     }
@@ -125,6 +149,13 @@ const chart1 = new Chart(ctx1, {
     },
     options: {
         plugins: {
+            colorSweepPlugin: {
+              gradientColors: [
+                  "rgba(118, 42, 131, 1)",
+                  "rgba(255, 255, 255, 1)",
+                  "rgba(90, 174, 97, 1)",
+              ]
+            },
             tooltip: {
                 titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
                 bodyFont: { family: 'Montserrat, sans-serif', size: 12},
@@ -210,6 +241,12 @@ const chart2 = new Chart(ctx2, {
     },
     options: {
         plugins: {
+            colorSweepPlugin: {
+              gradientColors: [
+                  "rgba(49, 54, 149, 1)",
+                  "rgba(255, 255, 191, 1)",
+                  "rgba(215, 48, 39, 1)" ]
+            },
             tooltip: {
                 titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
                 bodyFont: { family: 'Montserrat, sans-serif', size: 12},
@@ -425,7 +462,6 @@ const chart4 = new Chart(ctx4, {
             x: { grid: { display: false } }
         }
     },
-    plugins: [bounceShadowPlugin, colorSweepPlugin]
 });
 
 
