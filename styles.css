@@ -183,3 +183,42 @@ h3 {
     gap: 2rem;
     margin: 2rem;
 }
+
+/* ========================================
+   TEAM SECTION
+   ======================================== */
+
+#team-header {
+    margin-bottom: 150px;
+    padding-top: 50px;
+    font-weight: 300;
+}
+
+#team-hero {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#team-image {
+
+    p {
+        font-size: 1rem;
+        opacity: 0.4;
+    }
+
+}
+#team-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+
+    div {
+        margin: 20px;
+    }
+}
+
+#employees {
+    display: flex;
+    justify-content: center;
+}
