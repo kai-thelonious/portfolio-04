@@ -14,7 +14,7 @@ Gruppe kontrakt
 
 ## Data Analyse 
 Vi har analyseret datasættet chinook, hvilket er en butik. Der har vi haft fokus is selve musikken. Sådan noget som hvor langt et track er, en genres indtægt på præstation,
-top 10 artister i forhold til indtjæning og hvor mange der er per genre. 
+top 10 artister i forhold til indtjening og hvor mange der er per genre. 
 
 Vi fandt ud af at der var en del null værdier i sættet. 
 f.eks:
