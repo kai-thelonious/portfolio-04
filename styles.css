@@ -246,8 +246,9 @@ h3 {
    DONUT CHART SECTION
    ======================================== */
 
-#donut-header {
-    font-size: 8rem;
+.donut-header {
+    font-size: 5rem;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
 }
