@@ -126,6 +126,7 @@ h3 {
 #chart1-and-text,
 #chart2-and-text,
 #chart3-and-text {
+    height: 100vh;
     margin: 60px auto;
     padding: 32px 24px;
     display: grid;
