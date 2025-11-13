@@ -101,7 +101,7 @@ const customTexts1 = [
 let labelsChart1 = []
 let dataChart1 = []
 
-await fetch("js/genre-track-length.json")
+await fetch("data/genre-track-length.json")
     .then(response => response.json())
     .then(trackLengthPerGenre => {
         console.log(trackLengthPerGenre)
@@ -197,7 +197,7 @@ const chart1 = new Chart(ctx1, {
 let labelsChart2 = []
 let dataChart2 = []
 
-await fetch("js/genre-revenue.json")
+await fetch("data/genre-revenue.json")
     .then(response => response.json())
     .then(revenuePerGenre => {
         console.log(revenuePerGenre)
@@ -293,7 +293,7 @@ const chart2 = new Chart(ctx2, {
 let labelsChart3 = []
 let dataChart3 = []
 
-await fetch("js/top-10-revenue-artists.json")
+await fetch("data/top-10-revenue-artists.json")
     .then(response => response.json())
     .then(revenuePerArtist => {
         console.log(revenuePerArtist)
@@ -404,7 +404,7 @@ new Chart(ctx3, {
 let labelsChart4 = []
 let dataChart4 = []
 
-await fetch("js/monthly-revenue.json")
+await fetch("data/monthly-revenue.json")
     .then(response => response.json())
     .then(revenuePerMonth => {
         console.log(revenuePerMonth)
