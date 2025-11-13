@@ -84,7 +84,7 @@ const centerTextPlugin = {
         if (!lastHovered) return; // nothing to draw yet
 
         const label = lastHovered.label;
-        const value = lastHovered.parsed;
+        const value = lastHovered.value;
 
         const centerX = left + width / 2;
         const centerY = top + height / 2;
@@ -94,9 +94,9 @@ const centerTextPlugin = {
         ctx.textBaseline = 'middle';
 
 
-        const fontSizeGenre = 50;
+        const fontSizeGenre = 25;
         const fontSizeValue = 40;
-        const fontSizeText = 30;
+        const fontSizeText = 40;
 
         const totalHeight = fontSizeGenre + fontSizeValue + fontSizeText; // approximate
         let startY = centerY - totalHeight / 2 + fontSizeGenre / 2;
