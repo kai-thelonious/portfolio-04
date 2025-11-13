@@ -4,7 +4,7 @@
 
 
 Gruppe kontrakt
-- [ ] !!! Få styr på hvad vi lige helt præcis vil fortælle med data og dan en god histore - OS ALLE SAMMEN!!!
+- [x] !!! Få styr på hvad vi lige helt præcis vil fortælle med data og dan en god histore - OS ALLE SAMMEN!!!
 - [ ] Donut chart side + setup - Kai
 - [ ] Midterste Chart - Noah
 - [ ] Farve + chart animation - Sebastian
@@ -62,3 +62,4 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
