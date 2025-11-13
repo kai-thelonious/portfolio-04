@@ -34,7 +34,24 @@ Formålet er at graferne skal sætte nogle tanker i gang hos den nye medarbejder
 <br>
 Database Struktur Analyse - Chinook ER Diagram (Entitet Relation Diagram)
 <br>
-Chinook databasen er designet som en relationel database der modellerer en digital musikbutiks forretningslogik. Diagrammet viser 11 primære entiteter der er forbundet gennem et velstruktureret netværk af relationer, hvilket muliggør effektiv datahåndtering og komplekse forespørgsler.
+Chinook databasen er designet som en relationel database der modellerer en digital musikbutiks forretning. Diagrammet viser 11 primære entiteter der er forbundet gennem et velstruktureret netværk af relationer, hvilket muliggør effektiv datahåndtering.
+<br>
+### Relationstyper og Kardinalitet
+
+**One-to-Many relationer:**
+
+- Artist → Album (én kunstner kan have mange albums)
+- Album → Track (ét album kan have mange tracks)
+- Genre → Track (én genre kan omfatte mange tracks)
+- MediaType → Track (ét mediaformat kan bruges til mange tracks)
+- Customer → Invoice (én kunde kan have mange fakturaer)
+- Employee → Customer (én medarbejder kan betjene mange kunder)
+
+**Many-to-Many relationer:**
+
+- Track ↔ Playlist (gennem PlaylistTrack junction table)
+- Track ↔ Invoice (gennem InvoiceLine junction table)
+<br>
 <br>
 <br>
 <img width="284" height="126" alt="image" src="https://github.com/user-attachments/assets/0abea4b8-e946-43b0-bd69-1e6af89ded3c" />
@@ -81,6 +98,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
