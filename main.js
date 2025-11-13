@@ -245,6 +245,12 @@ const chart2 = new Chart(ctx2, {
     },
     options: {
         plugins: {
+            colorSweepPlugin: {
+              gradientColors: [
+                  "rgba(49, 54, 149, 1)",
+                  "rgba(255, 255, 191, 1)",
+                  "rgba(215, 48, 39, 1)" ]
+            },
             tooltip: {
                 titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
                 bodyFont: { family: 'Montserrat, sans-serif', size: 12},
@@ -261,7 +267,7 @@ const chart2 = new Chart(ctx2, {
                     label: function (context) {
                         const index = context.dataIndex;
                         const value = Math.round(context.parsed.y);
-                        return customTexts1[index] + " — Revenue in dollars: " + value + " $";
+                        return customTexts1[index] + " — $" + value + "K revenue";
                     }
                 }
             }
@@ -372,7 +378,7 @@ new Chart(ctx3, {
                     label: function (context) {
                         const index = context.dataIndex;
                         const value = context.parsed.y.toFixed(2);
-                        return customTexts3[index] + " — $" + value + "M revenue";
+                        return customTexts3[index] + " — $" + value + "K revenue";
                     }
                 }
             }
@@ -467,7 +473,7 @@ const chart4 = new Chart(ctx4, {
                     },
                     label: function (context) {
                         const value = Math.round(context.parsed.y);
-                        return `Revenue: ${value}M$`;
+                        return `Revenue: ${value}K$`;
                     }
                 }
             }

@@ -14,6 +14,49 @@ html {
     font-weight: 300;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+
+}
+
+section {
+    height: 90vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-for-chart4 {
+    height: 20vh;
+}
+
+#team-hero {
+    height: 95vh;
+}
+
+#employees {
+    height: 100vh;
+}
+
+#donut-chart{
+    height: 100vh;
+}
+
+#text-for-donut-chart{
+    height: 50vh;
+}
+
 body {
     background-image: url('background-2.png');
     background-size: 50%;
@@ -49,6 +92,16 @@ h3 {
 }
 
 /* ========================================
+   TITLE SECTION
+   ======================================== */
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================================
    HERO SECTION
    ======================================== */
 
@@ -67,7 +120,7 @@ h3 {
 
 .front-page-paragraphs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
 }
@@ -76,6 +129,13 @@ h3 {
 
     padding-bottom: 0;
     font-weight: 600;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .paragraph {
@@ -126,18 +186,16 @@ h3 {
 #chart1-and-text,
 #chart2-and-text,
 #chart3-and-text {
-    height: 100vh;
     margin: 60px auto;
-    padding: 32px 24px;
+    padding: 32px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
 }
 
 
-
-#chart4-and-text {
-    max-width: 1200px;
+#chart4 {
     margin: 60px auto;
     padding: 32px 24px;
     display: flex;
@@ -145,23 +203,46 @@ h3 {
     gap: 32px;
 }
 
+#myChart4 {
+    width: 100%;
+    height: 600px;
+}
+
 /* Shared text styles for all charts */
 .text-chart1 h2,
 .text-chart2 h2,
-.text-chart3 h2,
-.text-chart4 h2 {
+.text-chart3 h2 {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
     font-weight: 200;
     margin: 0 0 12px;
 }
 
+
 .text-chart1 p,
 .text-chart2 p,
-.text-chart3 p,
-.text-chart4 p {
+.text-chart3 p {
     line-height: 1.6;
     margin: 0 0 12px;
 }
+
+
+
+
+.text-chart4 h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: 200;
+}
+
+.text-chart4 {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+}
+
+
 
 /* ========================================
    DONUT CHART SECTION
