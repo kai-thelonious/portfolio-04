@@ -3,7 +3,7 @@ let labels = [];
 let data = [];
 const genreData = []; // Combined array to hold genre and track count for sorting
 
-await fetch("js/songs-per-genre.json")
+await fetch("data/songs-per-genre.json")
     .then(response => response.json())
     .then(songsPerGenre => {
         // 1. Load data into a single array for easier sorting
