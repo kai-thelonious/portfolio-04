@@ -1,100 +1,107 @@
-*{
-    /* Tilføj ´*{´ */
-    outline-style: dotted;
-    outline-color: red;
-    outline-offset: -1px;
-} /*kanter på elementer til visualisere design*/
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+* {
+    /* Uncomment for debugging layout issues */
+    /* outline: 1px dotted red; */
+    /* outline-offset: -1px; */
+}
 
 html {
-    /*background-color: #FF6B35;*/
     background-color: lightgray;
-    font-family: 'Montserrat', Times New Roman, serif;
+    font-family: 'Montserrat', 'Times New Roman', serif;
+    font-weight: 300;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    height: 1080px;
-    width: 900px;
-    overflow: clip;
+body {
+    background-image: url('background-2.png');
+    background-size: 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-
-.background-image-2 {
-    position: absolute;
-    left: 0;
-    height: 500px;
-    width: auto;
-    z-index: 0;
-}
-
-.hero {
-    position: relative;
-    background: transparent;
-
-}
-
-.hero * {
-    background: transparent;
-}
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
 
 h1 {
     font-size: 8rem;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-
-
 }
+
 h2 {
     font-size: 3rem;
     text-align: center;
-    /*text-transform: uppercase;*/
     margin: 0 1rem 1rem 1rem;
-    font-weight: 100;
-    padding-top: 0;
-
+    font-weight: 200;
+    padding: 2rem;
 }
 
 h3 {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-
+    font-weight: 100;
 }
 
+/* ========================================
+   HERO SECTION
+   ======================================== */
 
+.hero,
+.hero * {
+    background: transparent;
+}
+
+/* ========================================
+   FRONT PAGE CONTENT
+   ======================================== */
+
+#values-title {
+    margin-top: 100px;
+}
 
 .front-page-paragraphs {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     text-align: center;
+    justify-content: center;
 }
 
-.front-page-paragraphs h2 {
+.front-page-paragraphs h4 {
+
     padding-bottom: 0;
+    font-weight: 600;
 }
 
 .paragraph {
-
-    width: 50rem;
     gap: 4rem;
     padding: 1rem 2rem;
+    max-width: 350px;
+
+    p {
+        line-height: 1.5; /* 1.5 times the font size */
+    }
 }
 
+/* ========================================
+   NAVIGATION LINKS
+   ======================================== */
 
 .links-for-team-and-donut {
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 10rem;
-    padding: 5rem 5rem;
+    padding: 5rem;
+    font-weight: 500;
 }
 
-.links-for-team-and-donut a:link {
+.links-for-team-and-donut a {
     text-decoration: none;
     color: black;
 }
@@ -104,77 +111,28 @@ h3 {
 }
 
 .links-for-team-and-donut a:hover {
-    text-decoration: none;
     color: #961E1E;
 }
 
 .links-for-team-and-donut a:active {
     text-decoration: underline;
-
 }
 
+/* ========================================
+   CHARTS WITH TEXT SECTIONS
+   ======================================== */
 
-
-
-
-/*<editor-fold desc="text and charts">*/
-
-
-#chart1-and-text {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 32px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: start;
-}
-
-/* Tekstkolonne */
-.text-chart1 h2 {
-    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    font-weight: 800;
-    margin: 0 0 12px;
-}
-.text-chart1 p { line-height: 1.6; margin: 0 0 12px; }
-
-
-#chart2-and-text {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 32px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: start;
-}
-
-/* Tekstkolonne */
-.text-chart2 h2 {
-    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    font-weight: 800;
-    margin: 0 0 12px;
-}
-.text-chart2 p { line-height: 1.6; margin: 0 0 12px; }
-
-
+/* Shared chart container styles */
+#chart1-and-text,
+#chart2-and-text,
 #chart3-and-text {
-    max-width: 1200px;
     margin: 60px auto;
     padding: 32px 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: start;
+
 }
 
-/* Tekstkolonne */
-.text-chart3 h2 {
-    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    font-weight: 800;
-    margin: 0 0 12px;
-}
-.text-chart3 p { line-height: 1.6; margin: 0 0 12px; }
 
 
 #chart4-and-text {
@@ -182,24 +140,31 @@ h3 {
     margin: 60px auto;
     padding: 32px 24px;
     display: flex;
-    gap: 32px;
     flex-direction: column;
+    gap: 32px;
 }
 
-/* Tekstkolonne */
+/* Shared text styles for all charts */
+.text-chart1 h2,
+.text-chart2 h2,
+.text-chart3 h2,
 .text-chart4 h2 {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    font-weight: 800;
+    font-weight: 200;
     margin: 0 0 12px;
 }
-.text-chart4 p { line-height: 1.6; margin: 0 0 12px; }
 
-#myChart4 {
-
+.text-chart1 p,
+.text-chart2 p,
+.text-chart3 p,
+.text-chart4 p {
+    line-height: 1.6;
+    margin: 0 0 12px;
 }
 
-
-/*   ------------ Donut Chart ------------- */
+/* ========================================
+   DONUT CHART SECTION
+   ======================================== */
 
 #donut-header {
     font-size: 8rem;
@@ -217,8 +182,3 @@ h3 {
     gap: 2rem;
     margin: 2rem;
 }
-
-/*</editor-fold>*/
-
-
-

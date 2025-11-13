@@ -184,7 +184,18 @@ const chart1 = new Chart(ctx1, {
         responsive: true,
         scales: {
             y: { beginAtZero: true, grid: { display: false } },
-            x: { grid: { display: false } }
+            x: {
+                grid: { display: false },
+                ticks: {
+                    font: {
+                        family: 'Arial',  // Font family
+                        size: 8,         // Font size in px
+                        weight: 'bold',   // Font weight
+                        style: 'italic'   // Font style
+                    },
+                    color: '#333'       // Font color
+                }
+            }
         }
     },
     plugins: [bounceShadowPlugin, colorSweepPlugin]
@@ -275,7 +286,18 @@ const chart2 = new Chart(ctx2, {
         responsive: true,
         scales: {
             y: { beginAtZero: true, grid: { display: false } },
-            x: { grid: { display: false } }
+            x: {
+                grid: { display: false },
+                ticks: {
+                    font: {
+                        family: 'Arial',  // Font family
+                        size: 8,         // Font size in px
+                        weight: 'bold',   // Font weight
+                        style: 'italic'   // Font style
+                    },
+                    color: '#333'       // Font color
+                }
+            }
         }
     },
     plugins: [bounceShadowPlugin, colorSweepPlugin]
@@ -375,7 +397,18 @@ new Chart(ctx3, {
         responsive: true,
         scales: {
             y: { beginAtZero: true, grid: { display: false } },
-            x: { grid: { display: false } }
+            x: {
+                grid: { display: false },
+                ticks: {
+                    font: {
+                        family: 'Arial',  // Font family
+                        size: 8,         // Font size in px
+                        weight: 'bold',   // Font weight
+                        style: 'italic'   // Font style
+                    },
+                    color: '#333'       // Font color
+                }
+            }
         }
     },
     plugins: [bounceShadowPlugin, colorSweepPlugin]
@@ -459,7 +492,18 @@ const chart4 = new Chart(ctx4, {
         responsive: true,
         scales: {
             y: { beginAt20: true, grid: { display: false } },
-            x: { grid: { display: false } }
+            x: {
+                grid: { display: false },
+                ticks: {
+                    font: {
+                        family: 'Arial',  // Font family
+                        size: 8,         // Font size in px
+                        weight: 'bold',   // Font weight
+                        style: 'italic'   // Font style
+                    },
+                    color: '#333'       // Font color
+                }
+            }
         }
     },
 });
