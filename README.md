@@ -69,6 +69,8 @@ Her har vi lavet en query der beregner den gennemsnitlige track længde for hver
 <br>
 <img width="1128" height="206" alt="image" src="https://github.com/user-attachments/assets/cc3135ec-4c63-4144-8e6c-042f5b69bcbd" />
 <br>
+I denne query ville vi fidne summen af salg for hver måned. Der har vi brugt DATE_FORMAT for at konvetere en dato om til en string. Så sørger vi for at den kun viser måned og årstal. Så tager vi summen af total kolonnen for at få det totale salg af hver invoice
+i hver gruppe. Så gruppere vi hver invoice så de vil tilhøre den samme måned. Til sidst sortere vi resultatet.
 <br>
 <br>
 <br>
@@ -100,6 +102,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
