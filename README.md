@@ -100,6 +100,7 @@ i hver gruppe. Så gruppere vi hver invoice så de vil tilhøre den samme måned
 <br>
 <img width="1062" height="298" alt="image" src="https://github.com/user-attachments/assets/afb657b7-950a-4ea9-8ea0-f710bb8f909e" />
 <br>
+Her beregner vi omsætningen indtjent per genre ved at lave en query der tager summen af UnitPrice og Quantity. Disse to kolonner ganges sammen hvor resultatet så bliver skrevet på 'revenue' kollonen. Dette bliver grupperet ved kolonnen 'name'. Da vores data er delt op i forskellige tabeller bliver vi nødt til at joine tre tabeller for at finde ud af hvilken genre en sang har og hvor mange salg den enkelte sang har, for derefter at kunne beregne summen af sangene indenfor hver genre. 
 <br>
 <br>
 <br>
@@ -126,6 +127,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
