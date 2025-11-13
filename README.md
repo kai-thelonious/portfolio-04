@@ -23,11 +23,35 @@ Her kan man se under kolonnen "company" and der er nogle null værdier. Det kan 
 
 
 
-Budskab og målgruppe
+### Budskab og målgruppe
 
-Målgruppen er Chinooks nye medarbejdere, som vi gerne vil have aktiveret.
+### Primær Målgruppe
 
-Formålet er at graferne skal sætte nogle tanker i gang hos den nye medarbejder, i forhold til hvad de kan bidrage og hjælpe til med i udviklingen af virksomheden, og dens fremtid. 
+Websitets primære målgruppe er nye medarbejdere hos Chinook, der er i gang med deres onboarding-proces. Disse medarbejdere kommer fra forskellige baggrunde og kan have varierende erfaring med musikbranchen, dataanalyse, og forretningsstrategi. Websitet skal derfor fungere som både en introduktion til virksomheden og et værktøj til at udvikle strategisk forretningsforståelse.
+
+### Primære Budskaber
+
+**1. Virksomhedskultur og Værdier**
+
+Det første og mest fundamentale budskab kommunikerer Chinooks kerneværdier: passion for musik og engagement i lydkvalitet. Dette budskab etablerer den følelsesmæssige forbindelse mellem medarbejderen og virksomheden og skaber grundlaget for at forstå hvorfor Chinook eksisterer ud over blot at sælge musik.
+
+**2. "Meet Our Team" - Vi er et Team**
+
+Gennem medarbejderprofilerne kommunikeres budskabet om teamwork og samarbejde på tværs af afdelinger. Ved at præsentere hele teamet fra General Manager til IT Staff viser vi, at hver rolle er vigtig, og at nye medarbejdere bliver en del af et etableret, dedikeret team. Dette skaber tryghed og tilhørsforhold.
+
+**3. Data-Drevet Beslutningstagning**
+
+Visualiseringerne sender et klart signal om, at Chinook er en dataorienteret organisation. Nye medarbejdere skal forstå, at beslutninger baseres på fakta og analyse, ikke kun på mavefornemmelser. Dette professionaliserer virksomhedens image og sætter forventninger til arbejdskulturen.
+
+**4. Strategisk Tænkning og Innovation**
+
+Det mest centrale budskab er, at alle medarbejdere - uanset rolle - forventes at tænke kritisk og bidrage med idéer til forretningsudvikling. Ved at præsentere data sammen med åbne spørgsmål ("Hvad kan du tænke over?") inviteres medarbejdere til at se muligheder for vækst og forbedring. Dette demokratiserer innovation og giver medarbejdere ejerskab over virksomhedens succes.
+
+**5. Transparens og Åbenhed**
+
+Ved at dele detaljerede salgsdata, katalogsammensætning, og performance metrics kommunikerer Chinook et budskab om transparens. Nye medarbejdere får indsigt i virksomhedens faktiske performance - både styrker og svagheder - hvilket signalerer tillid og åbenhed.
+
+<br>
 
 
 <img width="480" height="568" alt="image" src="https://github.com/user-attachments/assets/02ea9457-bf9e-4921-be22-eb39324c49da" />
@@ -102,6 +126,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
