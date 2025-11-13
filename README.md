@@ -56,12 +56,14 @@ Chinook databasen er designet som en relationel database der modellerer en digit
 <br>
 <img width="284" height="126" alt="image" src="https://github.com/user-attachments/assets/0abea4b8-e946-43b0-bd69-1e6af89ded3c" />
 <br>
-Vi har brugt denne query til at oprette vores employee-table.json fil, som vi har brugt til at lave vores sektion på siden der hedder meet our team. Her kan man se navnene på hver medarbejder og lidt information om hvad de laver i virksomheden og hvor mange år de har været der.
+Vi vælger alle rækker fra employee tablen med denne query.
 <br>
+Vi har brugt denne query til at oprette vores employee-table.json fil, som vi har brugt til at lave vores sektion på siden der hedder meet our team. Her kan man se navnene på hver medarbejder og lidt information om hvad de laver i virksomheden og hvor mange år de har været der.
 <br>
 <br>
 <img width="1336" height="248" alt="image" src="https://github.com/user-attachments/assets/fedc2885-e901-4e62-a43b-d91277539b17" />
 <br>
+Her har vi lavet en query der beregner den gennemsnitlige track længde for hver genre. Vi starter med at tage gennemsnittet af Milliseconds kolonnen fra Track tabellen. Derefter konverterer vi millisekunder til minutter ved at dividere med 1000 (for at få sekunder) og derefter med 60 (for at få minutter). Vi bruger ROUND funktionen til at runde resultatet til 2 decimaler, så det er lettere at læse. Så joiner vi Track tabellen med Genre tabellen for at få genre navnet frem. Derefter grupperer vi på genre navnet, så vi får én gennemsnitlig længde per genre. Til sidst laver vi en ORDER BY på track_length_m i DESC (descending) rækkefølge, så vi får de genrer med de længste gennemsnitlige tracks først.
 <br>
 <br>
 <br>
@@ -98,6 +100,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
