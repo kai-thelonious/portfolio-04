@@ -60,6 +60,72 @@ const ctx1 = document.querySelector('#myDonutChart').getContext('2d');
 Chart.defaults.color = '#FFFFFF';
 Chart.defaults.font.weight = 'bold';
 
+// Register a custom tooltip positioner
+Chart.Tooltip.positioners.center = function(elements, eventPosition) {
+    // Get the chart from the first element
+    const chart = elements.length ? elements[0].element.$context.chart : null;
+    if (!chart) return false;
+
+    const { chartArea } = chart;
+    // Return the center of the chart area
+    return {
+        x: chartArea.left + (chartArea.right - chartArea.left) / 2,
+        y: chartArea.top + (chartArea.bottom - chartArea.top) / 2
+    };
+};
+
+let lastHovered = null;
+
+
+const centerTextPlugin = {
+    id: 'centerText',
+    afterDraw(chart) {
+        const { ctx, chartArea: { width, height, left, top } } = chart;
+        if (!lastHovered) return; // nothing to draw yet
+
+        const label = lastHovered.label;
+        const value = lastHovered.parsed;
+
+        const centerX = left + width / 2;
+        const centerY = top + height / 2;
+
+        ctx.save();
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+
+        const fontSizeGenre = 50;
+        const fontSizeValue = 40;
+        const fontSizeText = 30;
+
+        const totalHeight = fontSizeGenre + fontSizeValue + fontSizeText; // approximate
+        let startY = centerY - totalHeight / 2 + fontSizeGenre / 2;
+
+
+        // Line 1: genre
+        ctx.fillStyle = '#000000';
+        ctx.font = `bold ${fontSizeGenre}px Montserrat, sans-serif`;
+        ctx.fillText(label, centerX, startY);
+
+        startY += fontSizeGenre / 2 + fontSizeValue / 2; // space between lines
+        ctx.font = `bold ${fontSizeValue}px Montserrat, sans-serif`;
+        ctx.fillStyle = '#000000';
+        ctx.fillText(value, centerX, startY);
+
+        // Line 3: "songs"
+        startY += fontSizeValue / 2 + fontSizeText / 2;
+        ctx.font = `bold ${fontSizeText}px Montserrat, sans-serif`;
+        ctx.fillStyle = '#000000';
+        ctx.fillText('songs', centerX, startY);
+
+        ctx.restore();
+    }
+};
+
+
+Chart.register(centerTextPlugin);
+
+
 const chart1 = new Chart(ctx1, {
     type: 'doughnut',
     data: {
@@ -75,7 +141,18 @@ const chart1 = new Chart(ctx1, {
     },
     options: {
         responsive: true,
+        onHover: (event, elements, chart) => {
+            if (elements.length) {
+                lastHovered = {
+                    label: chart.data.labels[elements[0].index],
+                    value: chart.data.datasets[0].data[elements[0].index]
+                }
+            }
+        },
         plugins: {
+            tooltip: {
+                enabled: false
+            },
             legend: {
                 position: 'right',
                 labels: {

@@ -245,12 +245,6 @@ const chart2 = new Chart(ctx2, {
     },
     options: {
         plugins: {
-            colorSweepPlugin: {
-              gradientColors: [
-                  "rgba(49, 54, 149, 1)",
-                  "rgba(255, 255, 191, 1)",
-                  "rgba(215, 48, 39, 1)" ]
-            },
             tooltip: {
                 titleFont: { family: 'Montserrat, sans-serif', size: 12, weight: 'bold' },
                 bodyFont: { family: 'Montserrat, sans-serif', size: 12},
