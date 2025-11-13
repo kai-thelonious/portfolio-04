@@ -60,11 +60,15 @@ Vi har brugt denne query til at oprette vores employee-table.json fil, som vi ha
 <br>
 <img width="1224" height="374" alt="image" src="https://github.com/user-attachments/assets/425d6f4c-dfa4-4404-ac3d-2b07aec0a053" />
 <br>
+Her har vi lavet en query der tager summen af Unitprice og Quantity. Dem ganger vi med hinanden så vi får en samlet sum af de to kolonner. Så joiner vi tre tables sammen med InvoiceLine så vi kan få hver artist frem. 
+Så gruppere vi på navnet og laver en order by på den sum vi får og sørger for at vi får det højeste tal først. Til sidst laver vi et limit på 10 for at få de 10 artister frem som har lavet de højeste omsætninger
 <br>
 <br>
 <br>
 <img width="914" height="254" alt="image" src="https://github.com/user-attachments/assets/92516957-c80e-4ce7-bc91-fb779ad62a7f" />
 <br>
+Her har vi lavet en query der tager antallet af tracks per genre. Der har vi brugt COUNT() funktionen for at få returneret antallet af track id's. Så har vi joinet track sammen med genre id så vi kan få det samlet antal
+tracks per genre. Så gruppere vi ud fra genrens navn og sorterer genre_tracks i faldene for at få højeste til laveste.
 <br>
 <br>
 <br>
@@ -77,6 +81,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
