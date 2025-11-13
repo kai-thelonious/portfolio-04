@@ -3,7 +3,7 @@
  Group: Kai, Sebastian, Noah
 
 
-# To Do liste
+Gruppe kontrakt
 - [ ] !!! Få styr på hvad vi lige helt præcis vil fortælle med data og dan en god histore - OS ALLE SAMMEN!!!
 - [ ] Donut chart side + setup - Kai
 - [ ] Midterste Chart - Noah
@@ -13,3 +13,16 @@
 - [ ] Tilføj baggrunds billeder fra Figma uden at det ødelææger det hele - Kai
 - [ ] Organiser filstrukturen, læg billeder og scripts i respektive mapper osv.
 - [ ] Organiser og formater HTML og CSS, fx indrag semantisk HTML
+
+Dataanalyse 
+Vi har analyseret datasættet chinook, hvilket er en butik. Der har vi haft fokus is selve musikken. Sådan noget som hvor langt et track er, en genres indtægt på præstation,
+top 10 artister i forhold til indtjæning og hvor mange der er per genre. 
+
+Vi fandt ud af at der var en del null værdier i sættet. 
+f.eks:
+<img width="1985" height="258" alt="image" src="https://github.com/user-attachments/assets/25fdc918-c58e-495a-9a52-411ab87e74ff" />
+Her kan man se under kolonnen "company" and der er nogle null værdier. Det kan skyldes at der er enkelte personer der har købt noget og ikke et firma.
+
+
+Budskab og målgruppe
+
