@@ -31,5 +31,7 @@ Målgruppen er Chinooks nye medarbejdere, som vi gerne vil have aktiveret.
 
 Formålet er at graferne skal sætte nogle tanke i gang hos den nye medarbejder, i forhold til hvad de kan bidrage og hjælpe til med i udviklingen af virksomheden, og dens fremtid. 
 
+<img width="480" height="568" alt="image" src="https://github.com/user-attachments/assets/02ea9457-bf9e-4921-be22-eb39324c49da" />
+
 
 
