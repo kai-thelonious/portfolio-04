@@ -24,5 +24,12 @@ f.eks:
 Her kan man se under kolonnen "company" and der er nogle null værdier. Det kan skyldes at der er enkelte personer der har købt noget og ikke et firma.
 
 
+
 Budskab og målgruppe
+
+Målgruppen er Chinooks nye medarbejdere, som vi gerne vil have aktiveret.
+
+Formålet er at graferne skal sætte nogle tanke i gang hos den nye medarbejder, i forhold til hvad de kan bidrage og hjælpe til med i udviklingen af virksomheden, og dens fremtid. 
+
+
 
