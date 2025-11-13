@@ -1,4 +1,6 @@
-﻿# Chinook dataset analysis 
+[Deployed Site](https://kai-thelonious.github.io/portfolio-04/)
+ 
+ # Chinook dataset analysis 
 
  Group: Kai, Sebastian, Noah
 
@@ -127,6 +129,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
