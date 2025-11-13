@@ -27,7 +27,7 @@ Budskab og målgruppe
 
 Målgruppen er Chinooks nye medarbejdere, som vi gerne vil have aktiveret.
 
-Formålet er at graferne skal sætte nogle tanke i gang hos den nye medarbejder, i forhold til hvad de kan bidrage og hjælpe til med i udviklingen af virksomheden, og dens fremtid. 
+Formålet er at graferne skal sætte nogle tanker i gang hos den nye medarbejder, i forhold til hvad de kan bidrage og hjælpe til med i udviklingen af virksomheden, og dens fremtid. 
 
 
 <img width="480" height="568" alt="image" src="https://github.com/user-attachments/assets/02ea9457-bf9e-4921-be22-eb39324c49da" />
@@ -75,6 +75,7 @@ Der ud over laver vi også et site der hedder meet our team hvor der skal være 
 Der ud over skal der være et afsnit med Chinnoks(virksomheden) værdier og hvad det står for, og hvad de vil udrette ved at sælge musik. for eksempel at musik er deres helt store passion og god lyd som der er på deres filer, giver en helt speciel følelse inden i dem.
 Jeg kunne rigtig godt tænke mig at du hjælper mig med at skrive det her tekst til siden her under vil jeg lige tilføje nogle billeder af siden, så du kan se hvordan det ser ud indtil videre. Du får også vores employee tabel så du kan skrive noget om hver medarbejder.
 Har der udover også prompted den med billeder af vores datavisualiseringer, og employee-table.json.
+
 
 
 
